@@ -61,12 +61,14 @@ class UsuariosController extends Controller {
 			]);
 		}
 
-		User::create([
-			'name'           => $request['name'],
-			'email'          => $request['email'],
-			'privilegios'    => $request['privilegios'],
-			'password'       => bcrypt($request['password']),
-		]);
+		else {
+			User::create([
+				'name'           => $request['name'],
+				'email'          => $request['email'],
+				'privilegios'    => $request['privilegios'],
+				'password'       => bcrypt($request['password']),
+			]);
+		}
 		
 		Flash::success('Usuario creado correctamente');
 		return redirect('usuarios');
