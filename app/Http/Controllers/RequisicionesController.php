@@ -34,6 +34,7 @@ class RequisicionesController extends Controller {
 		$month = $mes ? $mes : Carbon::now()->month;
 		$year = $anio ? $anio : Carbon::now()->year;
 		$requisiciones = Requisicion::where('anio', $year)->where('mes', $month);
+		dd($requisiciones->get());
 		if (Auth::user()->isAnalista()) {
 			$requisiciones = $requisiciones->where('dependencia_id', Auth::user()->dependencia_id)->get();
 		}
