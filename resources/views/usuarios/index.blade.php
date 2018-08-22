@@ -35,7 +35,11 @@
                     <tr id="searchable">
                       <td>{{ $usuario->name }}</td>
                       <td>{{ $usuario->email }}</td>
+                      @if($usuario->dependencia)
                       <td>{{ $usuario->dependencia->nombre }}</td>
+                      @else
+                      <td></td>
+                      @endif
                       <td><a href="{{ action('UsuariosController@edit', $usuario->id) }}"><button type="button" class="btn btn-warning">Editar <i class="fa fa-pencil"></i></button></a></td>
                       <td>
                         <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal{{$usuario->id}}">
