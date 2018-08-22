@@ -15,7 +15,7 @@
     {!! Form::text('telefono', null, ['class' => 'form-control']) !!}
     <small class="text-danger">{{ $errors->first('telefono') }}</small>
 </div>
-
+<!--
 <div class="form-group{{ $errors->has('telefono2') ? ' has-error' : '' }}">
     {!! Form::label('telefono2', 'Teléfono 2') !!}
     {!! Form::text('telefono2', null, ['class' => 'form-control']) !!}
@@ -33,13 +33,13 @@
     {!! Form::text('telefono4', null, ['class' => 'form-control']) !!}
     <small class="text-danger">{{ $errors->first('telefono4') }}</small>
 </div>
-
+-->
 <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
     {!! Form::label('email', 'Email') !!}
     {!! Form::text('email', null, ['class' => 'form-control']) !!}
     <small class="text-danger">{{ $errors->first('email') }}</small>
 </div>
-
+<!--
 <div class="form-group{{ $errors->has('email2') ? ' has-error' : '' }}">
     {!! Form::label('email2', 'Email 2') !!}
     {!! Form::text('email2', null, ['class' => 'form-control']) !!}
@@ -57,7 +57,7 @@
     {!! Form::text('email 4', null, ['class' => 'form-control']) !!}
     <small class="text-danger">{{ $errors->first('email 4') }}</small>
 </div>
-
+-->
 <div class="form-group{{ $errors->has('direccion') ? ' has-error' : '' }}">
     {!! Form::label('direccion', 'Dirección') !!}
     {!! Form::text('direccion', null, ['class' => 'form-control']) !!}
@@ -75,7 +75,7 @@
     {!! Form::select('status', ['' => 'Status', 'Libre' => 'Libre', 'Vetado' => 'Vetado'], null, ['class' => 'form-control']) !!}
     <small class="text-danger">{{ $errors->first('status') }}</small>
 </div>
-
+<!--
 <div class="form-group{{ $errors->has('pagina_web') ? ' has-error' : '' }}">
     {!! Form::label('pagina_web', 'Pagina Web') !!}
     {!! Form::text('pagina_web', null, ['class' => 'form-control']) !!}
@@ -87,7 +87,7 @@
     {!! Form::text('folio', null, ['class' => 'form-control']) !!}
     <small class="text-danger">{{ $errors->first('folio') }}</small>
 </div>
-
+-->
 <div class="form-group{{ $errors->has('actividad') ? ' has-error' : '' }}">
     {!! Form::label('actividad', 'Actividad') !!}
     {!! Form::text('actividad', null, ['class' => 'form-control']) !!}
@@ -114,7 +114,7 @@
     </div>
     <small class="text-danger">{{ $errors->first('temporal') }}</small>
 </div>
-
+<!--
 <div class="form-group{{ $errors->has('fecha_alta') ? ' has-error' : '' }}">
     {!! Form::label('fecha_alta', 'Fecha Alta') !!}
     {!! Form::text('fecha_alta', null, ['class' => 'form-control']) !!}
@@ -138,7 +138,7 @@
     {!! Form::text('fecha_recibido_renovacion', null, ['class' => 'form-control', 'required' => 'required']) !!}
     <small class="text-danger">{{ $errors->first('fecha_recibido_renovacion') }}</small>
 </div>
-
+-->
 
 
 {!! Form::submit($submitButtonText, ['class' => 'btn btn-primary']) !!}

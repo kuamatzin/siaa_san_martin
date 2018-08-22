@@ -16,10 +16,6 @@
             <th>Representante</th>
             <th>Telefono</th>
             <th>RFC</th>
-            <th>Fecha Alta</th>
-            <th>Fecha Recibido Alta</th>
-            <th>Fecha Renovación</th>
-            <th>Fecha Recibido Renovación</th>
             <th>Editar</th>
           </tr>
         </thead>
@@ -32,10 +28,6 @@
                 <td>{{ $proveedor->representante }}</td>
                 <td>{{ $proveedor->telefono }}</td>
                 <td>{{ $proveedor->rfc }}</td>
-                <td>{{ $proveedor->fecha_alta }}</td>
-                <td>{{ $proveedor->fecha_recibido_alta }}</td>
-                <td>{{ $proveedor->fecha_renovacion }}</td>
-                <td>{{ $proveedor->fecha_recibido_renovacion }}</td>
                 <!--
                 <td><a href="{{ url('proveedores', $proveedor->id) }}"><button type="button" class="btn btn-primary">Ver <i class="fa fa-eye"></i></button></a></td>
                 -->
